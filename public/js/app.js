@@ -40483,6 +40483,17 @@ module.exports = "/images/Logo-FINAL-V-white-text.png?c672ed798438893475b5071fd6
 
 /***/ }),
 
+/***/ "./resources/js/animations.js":
+/*!************************************!*\
+  !*** ./resources/js/animations.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// gsap bude treba vložit asidie ako defer script
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -40492,9 +40503,12 @@ module.exports = "/images/Logo-FINAL-V-white-text.png?c672ed798438893475b5071fd6
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_navigation_bar_dist_vue_navigation_bar_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-navigation-bar/dist/vue-navigation-bar.css */ "./node_modules/vue-navigation-bar/dist/vue-navigation-bar.css");
-/* harmony import */ var vue_navigation_bar_dist_vue_navigation_bar_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_navigation_bar_dist_vue_navigation_bar_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _animations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./animations */ "./resources/js/animations.js");
+/* harmony import */ var _animations__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_animations__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue_navigation_bar_dist_vue_navigation_bar_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-navigation-bar/dist/vue-navigation-bar.css */ "./node_modules/vue-navigation-bar/dist/vue-navigation-bar.css");
+/* harmony import */ var vue_navigation_bar_dist_vue_navigation_bar_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_navigation_bar_dist_vue_navigation_bar_css__WEBPACK_IMPORTED_MODULE_1__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 Vue.component("contact-form", __webpack_require__(/*! ./components/ContactForm.vue */ "./resources/js/components/ContactForm.vue")["default"]);

@@ -1,0 +1,1 @@
+// gsap bude treba vložit asidie ako defer script

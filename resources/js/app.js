@@ -1,4 +1,5 @@
 require("./bootstrap");
+import './animations';
 
 window.Vue = require("vue");
 
@@ -11,5 +12,5 @@ Vue.component("newslatter", require("./components/Newslatter.vue").default);
 import "vue-navigation-bar/dist/vue-navigation-bar.css";
 
 const app = new Vue({
-    el: "#app",
+    el: "#app"
 });
