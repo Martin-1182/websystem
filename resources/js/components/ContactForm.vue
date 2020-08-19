@@ -76,7 +76,15 @@
                 </p>
             </div>
         </div>
-
+        <div class="md:flex md:items-left mb-6">
+    <div class=""></div>
+    <label class="md:w-2/3 block text-gray-500 font-bold">
+      <input class="mr-2 leading-tight" type="checkbox">
+      <span class="text-sm">
+        Súhlasím so spracovaním osobných údajov. <a href="#">info</a>
+      </span>
+    </label>
+  </div>
         <div class="flex justify-end w-full">
             <input
                 type="submit"
@@ -133,7 +141,7 @@ export default {
                             this.message = "",
                             this.success = response.data.message
                     }
-                    
+
                 })
                 .catch(errors => {
                     this.errors = errors.response.data.errors;
