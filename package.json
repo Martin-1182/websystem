@@ -26,6 +26,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "gsap": "^3.5.0",
         "vue-navigation-bar": "^4.0.2"
     }
 }

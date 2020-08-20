@@ -3,34 +3,30 @@
 @section('content')
 <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
     <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-
-        <h1 class="leading-tight">Tvorba E-shopov Portálov &amp; Webstránok</h1>
-        <div class="mt-2 text-green-700">Vitajte na našej stránke</div>
+        <h1 class="leading-tight anim1">Tvorba E-shopov Portálov &amp; Webstránok</h1>
+        <div class="mt-2 text-green-700 anim1">Vitajte na našej stránke</div>
     </div>
     <div class="mt-8 sm:mt-0">
-        <img src="{{ asset('images/developer.svg') }}" alt="hero" class="mx-auto sm:mx-0" />
+        <img src="{{ asset('images/developer.svg') }}" alt="hero" class="mx-auto sm:mx-0 anim-hero-img" />
     </div>
 </div> <!-- end hero -->
-
 <div class="container-inner mx-auto">
-    <p class="text-lg sm:text-xl"></p>
-    Venujeme sa vývoju a designu webových stránok a aplikácií. Ak potrebujete e-shop webovú stránku, alebo blog či
-    aplikáciu na mieru,
-    tak neváhajte a kľudne sa nám ozvyte upresníme detaili a začneme na tom pracovať. Ponúkame profesionálne služby
-    v oblasti informačných technológií, ktoré sme schopní poskytovať vďaka odborným znalostiam
-    a dlhoročným skúsenostiam.
+    <p class="text-lg sm:text-xl anim1">
+        Venujeme sa vývoju a designu webových stránok a aplikácií. Ak potrebujete e-shop webovú stránku, alebo blog či
+        aplikáciu na mieru,
+        tak neváhajte a kľudne sa nám ozvyte upresníme detaili a začneme na tom pracovať. Ponúkame profesionálne služby
+        v oblasti informačných technológií, ktoré sme schopní poskytovať vďaka odborným znalostiam
+        a dlhoročným skúsenostiam.
     </p>
-
     <div class="flex justify-between items-center py-6">
-        <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
+        <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0 anim-img-left">
             <img src="{{ asset('images/code_review.svg') }}" alt="browser" />
         </div>
-        <div class="w-1/2 px-8 hidden sm:flex justify-end">
+        <div class="w-1/2 px-8 hidden sm:flex justify-end anim-img-right">
             <img src="{{ asset('images/mobile.svg') }}" alt="mobile" />
         </div>
     </div>
 </div>
-
 <div class="overflow-x-hidden">
     <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
         <h2 class="font-bold mb-6" id="projects">Tu sú niektoré projekty na ktorých sme pracovali:</h2>
@@ -128,7 +124,9 @@
                 môžete nás kontaktovať cez náš kontaktný formulár. Alebo <a href="mailto:info@websystem.sk">poslať
                     email</a></p>
             <div class="text-lg sm:text-lg mb-16">
-                <contact-form />
+                <div id="app">
+                    <contact-form />
+                </div>
             </div>
         </div>
     </div> <!-- end contact-me -->
@@ -140,7 +138,9 @@
         <div class="w-4/5 mx-auto mb-8">
             <p class="mb-8 text-lg sm:text-xl">Ak sa zaujímate o novinky v spoločnosti WebSystem s.r.o. Tak neváhajte
                 a zaregistrujte sa k odberu nášho newsletteru.</p>
-            <newslatter />
+            <div id="app2">
+                <newslatter />
+            </div>
         </div>
     </div>
 

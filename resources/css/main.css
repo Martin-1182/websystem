@@ -113,4 +113,13 @@ nav .active {
     border: 0;
 }
 
-
+h1::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1A202C;
+    z-index: 1;
+    transform-origin: 100% 0;
+}

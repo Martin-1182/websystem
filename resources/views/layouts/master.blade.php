@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO -->
@@ -44,29 +44,30 @@
     <!-- end Favicons -->
 
     <title>Tvorba E-shopov Portálov & Webstránok</title>
-    
+
     <!-- style -->
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer ></script>
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
 
-<body class=" bg-gray-900 text-white font-serif">
-    <div id="app">
-        <header>
-            @include('partials.header')
-        </header>
-        <main>
-            <div class="flex-grow">
-                @yield('content')
-            </div>
-        </main>
-        <footer class="bg-green-700 text-white">
-            @include('partials.footer')
-        </footer>
-    </div>
-</body>
 
+
+<body class=" bg-gray-900 text-white font-serif">
+    <header class="border-t-14 border-green-700">
+        @include('partials.header')
+    </header>
+    <main>
+        <div class="flex-grow">
+            @yield('content')
+        </div>
+    </main>
+    <footer class="bg-green-700 text-white">
+        @include('partials.footer')
+        @include('cookieConsent::index')
+    </footer>
+</body>
 </html>
