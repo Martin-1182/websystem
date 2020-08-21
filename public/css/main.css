@@ -11434,7 +11434,7 @@ nav .active {
 h1::before {
   content: ' ';
   position: absolute;
-  left: 0;
+  left: -1px;
   width: 100%;
   height: 100%;
   background: #1A202C;

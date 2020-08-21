@@ -39511,7 +39511,7 @@ tl.from(".anim1", {
   stagger: .6,
   opacity: 0
 }).to(rule, {
-  duration: 1.8,
+  duration: 1.2,
   cssRule: {
     scaleY: 0
   }
