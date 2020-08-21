@@ -31,8 +31,8 @@ class ContactMail extends Mailable
     public function build()
     {
         return $this
-        ->subject('Nový email pre websystem s.r.o.')
-        ->markdown('emails.contact-form')
-        ->with('data', $this->data);
+            ->subject('Nový email pre websystem s.r.o.')
+            ->markdown('emails.contact-form')
+            ->with('data', $this->data);
     }
 }

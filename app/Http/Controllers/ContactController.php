@@ -43,12 +43,13 @@ class ContactController extends Controller
         $request->validate([
 
             'name' => 'required',
+            'checkbox' => 'required',
             'email' => 'required|email',
             'message' => 'required'
 
         ]);
 
-        DB::table('contact')->insert( $request->except('_token') );
+        DB::table('contact')->insert( $request->except('_token', 'checkbox') );
 
         $data = array(
             'name' => $request->name,

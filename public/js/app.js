@@ -2023,6 +2023,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2031,6 +2048,7 @@ var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
       name: "",
       email: "",
       message: "",
+      checkbox: "",
       errors: {},
       success: ""
     };
@@ -2042,11 +2060,12 @@ var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
       var FormData = {
         name: this.name,
         email: this.email,
-        message: this.message
+        message: this.message,
+        checkbox: this.checkbox
       };
       axios.post("/contact", FormData).then(function (response) {
         if (response.status === 201) {
-          _this.name = "", _this.email = "", _this.message = "", _this.success = response.data.message;
+          _this.name = "", _this.email = "", _this.message = "", _this.checkbox = "", _this.success = response.data.message;
         }
       })["catch"](function (errors) {
         _this.errors = errors.response.data.errors;
@@ -26881,7 +26900,7 @@ var render = function() {
             staticClass: "block mb-2 text-copy-primary",
             attrs: { for: "name" }
           },
-          [_vm._v("\n                  Meno\n              ")]
+          [_vm._v("\n                Meno\n            ")]
         ),
         _vm._v(" "),
         _c("input", {
@@ -26920,9 +26939,9 @@ var render = function() {
               _vm._l(_vm.errors.name, function(error, index) {
                 return _c("p", { key: index, staticClass: "text-red-500" }, [
                   _vm._v(
-                    "\n                      " +
+                    "\n                    " +
                       _vm._s(error) +
-                      "\n                  "
+                      "\n                "
                   )
                 ])
               }),
@@ -26938,7 +26957,7 @@ var render = function() {
             staticClass: "block text-copy-primary mb-2",
             attrs: { for: "email" }
           },
-          [_vm._v("\n                  Emailová adresa\n              ")]
+          [_vm._v("\n                Emailová adresa\n            ")]
         ),
         _vm._v(" "),
         _c("input", {
@@ -26977,9 +26996,9 @@ var render = function() {
               _vm._l(_vm.errors.email, function(error, index) {
                 return _c("p", { key: index, staticClass: "text-red-500" }, [
                   _vm._v(
-                    "\n                      " +
+                    "\n                    " +
                       _vm._s(error) +
-                      "\n                  "
+                      "\n                "
                   )
                 ])
               }),
@@ -26996,7 +27015,7 @@ var render = function() {
           staticClass: "block text-copy-primary mb-2",
           attrs: { for: "message" }
         },
-        [_vm._v("\n              Správa\n          ")]
+        [_vm._v("\n            Správa\n        ")]
       ),
       _vm._v(" "),
       _c("textarea", {
@@ -27034,9 +27053,7 @@ var render = function() {
             "div",
             _vm._l(_vm.errors.message, function(error, index) {
               return _c("p", { key: index, staticClass: "text-red-500" }, [
-                _vm._v(
-                  "\n                  " + _vm._s(error) + "\n              "
-                )
+                _vm._v("\n                " + _vm._s(error) + "\n            ")
               ])
             }),
             0
@@ -27044,7 +27061,65 @@ var render = function() {
         : _vm._e()
     ]),
     _vm._v(" "),
-    _vm._m(0),
+    _c("div", { staticClass: "md:flex md:items-left mb-2" }, [
+      _c("div", {}),
+      _vm._v(" "),
+      _c("label", { staticClass: "md:w-2/3 block text-gray-500 font-bold" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.checkbox,
+              expression: "checkbox"
+            }
+          ],
+          staticClass: "mr-2 leading-tight",
+          class: { "border-red-500": _vm.errors.checkbox },
+          attrs: { type: "checkbox", name: "checkbox" },
+          domProps: {
+            checked: Array.isArray(_vm.checkbox)
+              ? _vm._i(_vm.checkbox, null) > -1
+              : _vm.checkbox
+          },
+          on: {
+            change: function($event) {
+              var $$a = _vm.checkbox,
+                $$el = $event.target,
+                $$c = $$el.checked ? true : false
+              if (Array.isArray($$a)) {
+                var $$v = null,
+                  $$i = _vm._i($$a, $$v)
+                if ($$el.checked) {
+                  $$i < 0 && (_vm.checkbox = $$a.concat([$$v]))
+                } else {
+                  $$i > -1 &&
+                    (_vm.checkbox = $$a
+                      .slice(0, $$i)
+                      .concat($$a.slice($$i + 1)))
+                }
+              } else {
+                _vm.checkbox = $$c
+              }
+            }
+          }
+        }),
+        _vm._v(" "),
+        _vm._m(0)
+      ])
+    ]),
+    _vm._v(" "),
+    _vm.errors.checkbox
+      ? _c(
+          "div",
+          _vm._l(_vm.errors.checkbox, function(error, index) {
+            return _c("p", { key: index, staticClass: "text-red-500 block" }, [
+              _vm._v("\n                " + _vm._s(error) + "\n            ")
+            ])
+          }),
+          0
+        )
+      : _vm._e(),
     _vm._v(" "),
     _c("div", { staticClass: "flex justify-end w-full" }, [
       _c("input", {
@@ -27101,20 +27176,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "md:flex md:items-left mb-6" }, [
-      _c("div", {}),
-      _vm._v(" "),
-      _c("label", { staticClass: "md:w-2/3 block text-gray-500 font-bold" }, [
-        _c("input", {
-          staticClass: "mr-2 leading-tight",
-          attrs: { type: "checkbox" }
-        }),
-        _vm._v(" "),
-        _c("span", { staticClass: "text-sm" }, [
-          _vm._v("\n      Súhlasím so spracovaním osobných údajov. "),
-          _c("a", { attrs: { href: "#" } }, [_vm._v("info")])
-        ])
-      ])
+    return _c("span", { staticClass: "text-sm" }, [
+      _vm._v(
+        "\n                Súhlasím so spracovaním osobných údajov.\n                "
+      ),
+      _c("a", { attrs: { href: "#" } }, [_vm._v("info")])
     ])
   }
 ]
@@ -39646,8 +39712,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\websystem\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\websystem\resources\css\main.css */"./resources/css/main.css");
+__webpack_require__(/*! D:\www\websystem\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\www\websystem\resources\css\main.css */"./resources/css/main.css");
 
 
 /***/ })

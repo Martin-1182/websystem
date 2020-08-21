@@ -76,15 +76,32 @@
                 </p>
             </div>
         </div>
-        <div class="md:flex md:items-left mb-6">
-    <div class=""></div>
-    <label class="md:w-2/3 block text-gray-500 font-bold">
-      <input class="mr-2 leading-tight" type="checkbox">
-      <span class="text-sm">
-        Súhlasím so spracovaním osobných údajov. <a href="#">info</a>
-      </span>
-    </label>
-  </div>
+        <div class="md:flex md:items-left mb-2">
+            <div class=""></div>
+            <label class="md:w-2/3 block text-gray-500 font-bold">
+                <input
+                    :class="{ 'border-red-500': errors.checkbox }"
+                    v-model="checkbox"
+                    class="mr-2 leading-tight"
+                    type="checkbox"
+                    name="checkbox"
+                />
+                <span class="text-sm">
+                    Súhlasím so spracovaním osobných údajov.
+                    <a href="#">info</a>
+                </span>
+
+            </label>
+        </div>
+        <div v-if="errors.checkbox">
+                <p
+                    class="text-red-500 block"
+                    v-for="(error, index) in errors.checkbox"
+                    :key="index"
+                >
+                    {{ error }}
+                </p>
+            </div>
         <div class="flex justify-end w-full">
             <input
                 type="submit"
@@ -121,6 +138,7 @@ export default {
             name: "",
             email: "",
             message: "",
+            checkbox: "",
             errors: {},
             success: ""
         };
@@ -130,7 +148,8 @@ export default {
             let FormData = {
                 name: this.name,
                 email: this.email,
-                message: this.message
+                message: this.message,
+                checkbox: this.checkbox
             };
             axios
                 .post("/contact", FormData)
@@ -139,9 +158,9 @@ export default {
                             this.name = "",
                             this.email = "",
                             this.message = "",
-                            this.success = response.data.message
+                            this.checkbox = "",
+                            this.success = response.data.message;
                     }
-
                 })
                 .catch(errors => {
                     this.errors = errors.response.data.errors;
