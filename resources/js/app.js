@@ -1,18 +1,21 @@
 require("./bootstrap");
-import './animations';
+import "./animations";
 
 window.Vue = require("vue");
+
+import vueSmoothScroll from 'vue2-smooth-scroll'
+Vue.use(vueSmoothScroll)
 
 Vue.component("contact-form", require("./components/ContactForm.vue").default);
 Vue.component("newslatter", require("./components/Newslatter.vue").default);
 Vue.component("nav-bar", require("./components/NavBar.vue").default);
 
-const app = new Vue({
-    el: "#app",
+const navBar = new Vue({
+  el: "#navBar",
 });
-const app1 = new Vue({
-    el: "#app1"
+const contactForm = new Vue({
+  el: "#contactForm",
 });
-const app2 = new Vue({
-    el: "#app2",
+const newslatter = new Vue({
+  el: "#newslatter",
 });

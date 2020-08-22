@@ -27,9 +27,10 @@
         </div>
     </div>
 </div>
-<div class="overflow-x-hidden">
+
+<div class="overflow-x-hidden" id="projects">
     <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
-        <h2 class="font-bold mb-6" id="projects">Tu sú niektoré projekty na ktorých sme pracovali:</h2>
+        <h2 class="font-bold mb-6 box">Tu sú niektoré projekty na ktorých sme pracovali:</h2>
 
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
             <svg id="dots-triangle" width="170" height="170" xmlns="http://www.w3.org/2000/svg">
@@ -39,10 +40,11 @@
             </svg>
         </div>
         <ul class="text-lg sm:text-xl space-y-6">
-            <li class="checkmark">
-                <div> <a class="text-white font-normal" href="https://ecommerce.websystem.sk">Ecommerce aplikácia</a>
+            <li class="checkmark box">
+                <div> <a class="text-white font-normal" href="https://ecommerce.websystem.sk">Ecommerce
+                        aplikácia</a>
                 </div>
-                <div class="text-lg text-gray-600">Aplikácia Elelektronický obchod
+                <div class="text-lg text-gray-600 box">Aplikácia Elelektronický obchod
                     je postavená na framevorku Laravel 7.
                     Aplikácia <a href="https://ecommerce.websystem.sk" target="_blank"
                         rel="noopener noreferrer">Ecommerce</a> zahŕňa viac produktov, kategórií, nákupný košík,
@@ -51,33 +53,36 @@
                         rel="noopener noreferrer">Stripe.</a>
                 </div>
             </li>
-            <li class="checkmark">
+            <li class="checkmark box">
                 <div> <a class="text-white font-normal" href="">Movies aplikácia</a> </div>
-                <div class="text-lg text-gray-600">
+                <div class="text-lg text-gray-600 box">
                     Filmová aplikácia vytvorená pomocou rozhrania <a href="">TMDb Rest API.</a> Využívame funkcie
                     Laravel 7 ako HTTP klient,
-                    Tailwind CSS, rozbaľovacia ponuka vyhľadávania s Livewire, interaktivita používateľského rozhrania
+                    Tailwind CSS, rozbaľovacia ponuka vyhľadávania s Livewire, interaktivita používateľského
+                    rozhrania
                     Alpine.js.
                     <a href="https://movies.websystem.sk"> Movies</a>
                 </div>
             </li>
-            <li class="checkmark">
+            <li class="checkmark box">
                 <div> <a class="text-white font-normal" href="https://trims.sk/" target="_blank"
                         rel="noopener noreferrer">Webová stránka</a> </div>
-                <div class="text-lg text-gray-600">
+                <div class="text-lg text-gray-600 box">
                     Webová stránka spoločnosti <a href="https://trims.sk/" target="_blank"
-                        rel="noopener noreferrer">T.R.I.M.S. Security</a> je jeden s našich starších projektov (2017).
+                        rel="noopener noreferrer">T.R.I.M.S. Security</a> je jeden s našich starších projektov
+                    (2017).
                     Jedná sa o jednoduchú prezenčnú
                     webovú stránku HTML, SCSS, GSAP, JQUERY
                 </div>
             </li>
-            <li class="checkmark">
+            <li class="checkmark box">
                 <div> <a class="text-white font-normal" href="https://itunes.websystem.sk" target="_blank"
                         rel="noopener noreferrer">SPA iTunes</a> </div>
-                <div class="text-lg text-gray-600">
+                <div class="text-lg text-gray-600 box">
                     Naša SPA (<em><small>single page application</small></em>) na vyhľadávanie skladieb a albumov z
                     rozhrania iTunes Search API. Pre vývoj
-                    <a href="https://itunes.websystem.sk" target="_blank" rel="noopener noreferrer"> iTunes aplkácie</a>
+                    <a href="https://itunes.websystem.sk" target="_blank" rel="noopener noreferrer"> iTunes
+                        aplkácie</a>
                     sme použili náš obľúbený javascriptový framework Vue.js
 
                 </div>
@@ -85,7 +90,9 @@
         </ul>
     </div> <!-- end projects -->
 </div>
-<div class="overflow-x-hidden border-gray-200 border-b">
+
+
+<div class="overflow-x-hidden border-gray-200 border-b" id="aboutUs">
     <div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
         <h2 class="font-bold mb-6" id="about">Spoznajte nás:</h2>
         <div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">
@@ -112,10 +119,10 @@
     </div> <!-- end get-to-know me -->
 </div>
 
-<div class="overflow-x-hidden">
+<div class="overflow-x-hidden" id="contact">
     <div class="contact-me bg-gray-800 pt-16">
         <div class="container-inner mx-auto text-xl pb-4 relative">
-            <h2 class="font-bold mb-6" id="contact">Kontaktujte nás:</h2>
+            <h2 class="font-bold mb-6">Kontaktujte nás:</h2>
             <div class="absolute right-0 top-0" style="transform: translate(100%) rotate(180deg)">
                 <svg width="170px" height="170px">
                     <use xlink:href="#dots-triangle" /></svg>
@@ -124,7 +131,7 @@
                 môžete nás kontaktovať cez náš kontaktný formulár. Alebo <a href="mailto:info@websystem.sk">poslať
                     email</a></p>
             <div class="text-lg sm:text-lg mb-16">
-                <div id="app">
+                <div id="contactForm">
                     <contact-form />
                 </div>
             </div>
@@ -138,7 +145,7 @@
         <div class="w-4/5 mx-auto mb-8">
             <p class="mb-8 text-lg sm:text-xl">Ak sa zaujímate o novinky v spoločnosti WebSystem s.r.o. Tak neváhajte
                 a zaregistrujte sa k odberu nášho newsletteru.</p>
-            <div id="app2">
+            <div id="newslatter">
                 <newslatter />
             </div>
         </div>

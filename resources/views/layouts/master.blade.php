@@ -58,10 +58,9 @@
 
 <body class=" bg-gray-900 text-white font-serif">
     <header class="border-t-14 border-green-700">
-        <div id="app1">
+        <div id="navBar">
              <nav-bar />
         </div>
-
     </header>
     <main>
         <div class="flex-grow">

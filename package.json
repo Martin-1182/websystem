@@ -27,6 +27,7 @@
     },
     "dependencies": {
         "gsap": "^3.5.0",
-        "vue-navigation-bar": "^4.0.2"
+        "vue-navigation-bar": "^4.0.2",
+        "vue2-smooth-scroll": "^1.5.0"
     }
 }

@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@home');
+Route::get('/cookies', 'PagesController@cookies');
+Route::get('/ochrana-osobnych-udajov', 'PagesController@personal');
 Route::post('/contact', 'ContactController@store')->name('contact.store');
 Route::post('/newslatter', 'NewslatterController@store')->name('newslatter.store');

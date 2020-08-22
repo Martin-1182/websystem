@@ -1,69 +1,91 @@
 <template>
+  <nav
+    class="container mx-auto flex flex-wrap justify-between items-center py-8"
+  >
     <div>
-        <nav
-            class="container mx-auto flex flex-wrap justify-between items-center py-8"
-        >
-            <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <!-- logo -->
-                <img
-                    src="../../img/logo.svg"
-                    alt="websystem-logo"
-                    class="w-56"
-                />
-            </div>
-            <div class="block lg:hidden">
-                <button
-                    @click="toggle"
-                    class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600"
-                    data-cypress="hamburger"
-                >
-                    <svg
-                        class="fill-current h-3 w-3"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
-            </div>
-            <div
-                class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
-            >
-                <div class="text-sm lg:flex-grow">
-                    <a
-                        href="#responsive-header"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-                    >
-                        Docs
-                    </a>
-                    <a
-                        href="#responsive-header"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-                    >
-                        Examples
-                    </a>
-                    <a
-                        href="#responsive-header"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
-                    >
-                        Blog
-                    </a>
-                </div>
-                <div>
-                    <a
-                        href="#"
-                        class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-                        >Download</a
-                    >
-                </div>
-            </div>
-        </nav>
+      <a href="/">
+        <img src="../../img/logo.svg" class="w-48" alt="logo" />
+      </a>
     </div>
+    <div class="block lg:hidden">
+      <button
+        @click="toggle"
+        class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600"
+      >
+        <svg
+          class="current-color h-3 w-3"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" />
+        </svg>
+      </button>
+    </div>
+    <ul
+      class="uppercase tracking-wide font-bold w-full block flex-grow lg:space-x-8 space-y-6 lg:space-y-0 lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
+      :class="isOpen ? 'block' : 'hidden'"
+    >
+    <li>
+        <a href="#projects" v-smooth-scroll="{ duration: 1000, offset: 10, updateHistory: false }">Projekty</a>
+      </li>
+      <li>
+        <a href="#aboutUs" v-smooth-scroll="{ duration: 1000, offset: -50, updateHistory: false }">O nás</a>
+      </li>
+      <li>
+        <a href="#contact" v-smooth-scroll="{ duration: 1000, offset: 50, updateHistory: false }">Kontakt</a>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+  methods: {
+    toggle() {
+      this.isOpen = !this.isOpen;
+    },
+  },
+};
 </script>
+<style lang="scss" scoped>
+a {
+  @apply text-green-700;
+}
 
-<style lang="scss" scoped></style>
+a:hover {
+  @apply text-green-800;
+}
+
+nav .active {
+  font-weight: bold;
+  @apply border-black;
+}
+
+.container-inner {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-inner {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-inner {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-inner {
+    max-width: 800px;
+  }
+}
+</style>
