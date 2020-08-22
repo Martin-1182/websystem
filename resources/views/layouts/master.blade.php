@@ -17,7 +17,7 @@
     <meta property="og:image:height" content="503">
     <meta property="og:image:width" content="961">
     <meta property="og:description"
-        content="Ak potrebujete e-shop webovú stránku, alebo blog či aplikáciu na mieru, tak neváhajte a kľudne sa nám ozvyte upresníme detaili a začneme na tom pracovať">
+        content="Ak potrebujete e-shop webovú stránku, alebo blog či aplikáciu na mieru, tak neváhajte a pokojne nás kontaktujte upresníme detaili a začneme na tom pracovať">
     <meta property="og:title" content="WebSystem | Tvorba E-shopov Portálov & Webstránok">
     <meta property="og:url" content="https://websystem.sk">
     <meta property="og:image" content="{{ asset('og/facebook_og_img.png') }}">

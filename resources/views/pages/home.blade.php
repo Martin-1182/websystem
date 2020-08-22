@@ -30,7 +30,8 @@
 
 <div class="overflow-x-hidden" id="projects">
     <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
-        <h2 class="font-bold mb-6 header-text" data-aos="fade-down">Tu sú niektoré projekty na ktorých sme pracovali:</h2>
+        <h2 class="font-bold mb-6 header-text" data-aos="fade-down">Tu sú niektoré projekty na ktorých sme pracovali:
+        </h2>
 
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
             <svg id="dots-triangle" width="170" height="170" xmlns="http://www.w3.org/2000/svg">
@@ -40,8 +41,9 @@
             </svg>
         </div>
         <ul class="text-lg sm:text-xl space-y-6">
-            <li class="checkmark"  data-aos="zoom-out-left">
-                <div data-aos="zoom-out-down"> <a class="text-white font-normal" href="https://ecommerce.websystem.sk">Ecommerce
+            <li class="checkmark" data-aos="zoom-out-left">
+                <div data-aos="zoom-out-down"> <a class="text-white font-normal"
+                        href="https://ecommerce.websystem.sk">Ecommerce
                         aplikácia</a>
                 </div>
                 <div class="text-lg text-gray-600">Aplikácia Elelektronický obchod
@@ -65,8 +67,8 @@
                 </div>
             </li>
             <li class="checkmark" data-aos="zoom-out-left">
-                <div data-aos="zoom-out-down"> <a class="text-white font-normal" href="https://trims.sk/" target="_blank"
-                        rel="noopener noreferrer">Webová stránka</a> </div>
+                <div data-aos="zoom-out-down"> <a class="text-white font-normal" href="https://trims.sk/"
+                        target="_blank" rel="noopener noreferrer">Webová stránka</a> </div>
                 <div class="text-lg text-gray-600 ">
                     Webová stránka spoločnosti <a href="https://trims.sk/" target="_blank"
                         rel="noopener noreferrer">T.R.I.M.S. Security</a> je jeden s našich starších projektov
@@ -76,8 +78,8 @@
                 </div>
             </li>
             <li class="checkmark" data-aos="zoom-out-left">
-                <div data-aos="zoom-out-down"> <a class="text-white font-normal" href="https://itunes.websystem.sk" target="_blank"
-                        rel="noopener noreferrer">SPA iTunes</a> </div>
+                <div data-aos="zoom-out-down"> <a class="text-white font-normal" href="https://itunes.websystem.sk"
+                        target="_blank" rel="noopener noreferrer">SPA iTunes</a> </div>
                 <div class="text-lg text-gray-600">
                     Naša SPA (<em><small>single page application</small></em>) na vyhľadávanie skladieb a albumov z
                     rozhrania iTunes Search API. Pre vývoj
@@ -90,19 +92,17 @@
         </ul>
     </div> <!-- end projects -->
 </div>
-
-
 <div class="overflow-x-hidden border-gray-200 border-b" id="aboutUs">
     <div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
         <h2 data-aos="fade-down" class="font-bold mb-6" id="about">Spoznajte nás:</h2>
         <div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">
             <svg width="170px" height="170px">
-                <use xlink:href="#dots-triangle" /></svg>
+                <use xlink:href="#dots-triangle" />
+            </svg>
         </div>
         <div class="flex flex-col sm:flex-row justify-between items-center mb-4">
             <div data-aos="fade-up">
-                <img src="{{ asset('images/WS-logo-blue-edit.png') }}" alt="logo"
-                    class="w-34 h-32 rounded-full mb-8 lg:mb-0" />
+                <img src="{{ asset('images/WS-logo-blue-edit.png') }}" alt="logo" class="w-34 h-32 mb-8 lg:mb-0" />
             </div>
             <div data-aos="zoom-out-down" class="flex-1 text-lg sm:text-xl ml-6">
                 Sme mladá dynamicky sa rozvíjajúca spoločnosť, ktorá svojím zákazníkom ponúka a zhotovuje od menších, až
@@ -143,7 +143,8 @@
         <h2 data-aos="fade-down" class="text-2xl font-bold mb-8">Odoberajte náš Newsletter</h2>
 
         <div class="w-4/5 mx-auto mb-8">
-            <p data-aos="zoom-out-down" class="mb-8 text-lg sm:text-xl">Ak sa zaujímate o novinky v spoločnosti WebSystem s.r.o. Tak neváhajte
+            <p data-aos="zoom-out-down" class="mb-8 text-lg sm:text-xl">Ak sa zaujímate o novinky v spoločnosti
+                WebSystem s.r.o. Tak neváhajte
                 a zaregistrujte sa k odberu nášho newsletteru.</p>
             <div data-aos="zoom-out-down" id="newslatter">
                 <newslatter />

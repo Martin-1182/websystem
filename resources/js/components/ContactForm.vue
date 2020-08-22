@@ -78,7 +78,7 @@
         </div>
         <div class="md:flex md:items-left mb-2">
             <div class=""></div>
-            <label class="md:w-2/3 block text-gray-500 font-bold">
+            <label class="flex md:w-2/3 text-gray-500 font-bold">
                 <input
                     :class="{ 'border-red-500': errors.checkbox }"
                     v-model="checkbox"
