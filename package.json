@@ -26,6 +26,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "aos": "^3.0.0-beta.6",
         "gsap": "^3.5.0",
         "vue-navigation-bar": "^4.0.2",
         "vue2-smooth-scroll": "^1.5.0"

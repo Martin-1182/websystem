@@ -49,7 +49,6 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
     <!-- Scripts -->
-
     <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
@@ -72,9 +71,9 @@
             @yield('content')
         </div>
     </main>
+    @include('cookieConsent::index')
     <footer class="bg-green-700 text-white">
         @include('partials.footer')
-        @include('cookieConsent::index')
     </footer>
 </body>
 

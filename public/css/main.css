@@ -11431,6 +11431,17 @@ nav .active {
   border: 0;
 }
 
+h1::before {
+  content: ' ';
+  position: absolute;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  background: #1A202C;
+  z-index: 1;
+  transform-origin: 100% 0;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

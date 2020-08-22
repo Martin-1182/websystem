@@ -3,15 +3,15 @@
 @section('content')
 <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
     <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-        <h1 class="leading-tight">Tvorba E-shopov Portálov &amp; Webstránok</h1>
-        <div class="mt-2 text-green-700">Vitajte na našej stránke</div>
+        <h1 class="leading-tight anim1">Tvorba E-shopov Portálov &amp; Webstránok</h1>
+        <div class="mt-2 text-green-700 anim1">Vitajte na našej stránke</div>
     </div>
     <div class="mt-8 sm:mt-0">
         <img src="{{ asset('images/developer.svg') }}" alt="hero" class="mx-auto sm:mx-0 anim-hero-img" />
     </div>
 </div> <!-- end hero -->
 <div class="container-inner mx-auto">
-    <p class="text-lg sm:text-xl">
+    <p class="text-lg sm:text-xl anim1">
         Venujeme sa vývoju a designu webových stránok a aplikácií. Ak potrebujete e-shop webovú stránku, alebo blog či
         aplikáciu na mieru,
         tak neváhajte a kľudne sa nám ozvyte upresníme detaili a začneme na tom pracovať. Ponúkame profesionálne služby
@@ -30,9 +30,9 @@
 
 <div class="overflow-x-hidden" id="projects">
     <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
-        <h2 class="font-bold mb-6 header-text">Tu sú niektoré projekty na ktorých sme pracovali:</h2>
+        <h2 class="font-bold mb-6 header-text" data-aos="fade-down">Tu sú niektoré projekty na ktorých sme pracovali:</h2>
 
-        <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
+        <div data-aos="fade-down-left" class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
             <svg id="dots-triangle" width="170" height="170" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M168.152 170a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478 0a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm-18.479 0a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zM94.24 133.043a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478 36.956a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478 55.434a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm-18.479 73.913a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm-18.478 92.391a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zM1.848 133.044a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.695zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696z"
@@ -40,11 +40,11 @@
             </svg>
         </div>
         <ul class="text-lg sm:text-xl space-y-6">
-            <li class="checkmark ">
-                <div> <a class="text-white font-normal" href="https://ecommerce.websystem.sk">Ecommerce
+            <li class="checkmark"  data-aos="zoom-out-left">
+                <div data-aos="zoom-out-down"> <a class="text-white font-normal" href="https://ecommerce.websystem.sk">Ecommerce
                         aplikácia</a>
                 </div>
-                <div class="text-lg text-gray-600 ">Aplikácia Elelektronický obchod
+                <div class="text-lg text-gray-600">Aplikácia Elelektronický obchod
                     je postavená na framevorku Laravel 7.
                     Aplikácia <a href="https://ecommerce.websystem.sk" target="_blank"
                         rel="noopener noreferrer">Ecommerce</a> zahŕňa viac produktov, kategórií, nákupný košík,
@@ -53,8 +53,8 @@
                         rel="noopener noreferrer">Stripe.</a>
                 </div>
             </li>
-            <li class="checkmark">
-                <div> <a class="text-white font-normal" href="">Movies aplikácia</a> </div>
+            <li class="checkmark" data-aos="zoom-out-left">
+                <div data-aos="zoom-out-down"> <a class="text-white font-normal" href="">Movies aplikácia</a> </div>
                 <div class="text-lg text-gray-600 ">
                     Filmová aplikácia vytvorená pomocou rozhrania <a href="">TMDb Rest API.</a> Využívame funkcie
                     Laravel 7 ako HTTP klient,
@@ -64,8 +64,8 @@
                     <a href="https://movies.websystem.sk"> Movies</a>
                 </div>
             </li>
-            <li class="checkmark ">
-                <div> <a class="text-white font-normal" href="https://trims.sk/" target="_blank"
+            <li class="checkmark" data-aos="zoom-out-left">
+                <div data-aos="zoom-out-down"> <a class="text-white font-normal" href="https://trims.sk/" target="_blank"
                         rel="noopener noreferrer">Webová stránka</a> </div>
                 <div class="text-lg text-gray-600 ">
                     Webová stránka spoločnosti <a href="https://trims.sk/" target="_blank"
@@ -75,8 +75,8 @@
                     webovú stránku HTML, SCSS, GSAP, JQUERY
                 </div>
             </li>
-            <li class="checkmark ">
-                <div> <a class="text-white font-normal" href="https://itunes.websystem.sk" target="_blank"
+            <li class="checkmark" data-aos="zoom-out-left">
+                <div data-aos="zoom-out-down"> <a class="text-white font-normal" href="https://itunes.websystem.sk" target="_blank"
                         rel="noopener noreferrer">SPA iTunes</a> </div>
                 <div class="text-lg text-gray-600">
                     Naša SPA (<em><small>single page application</small></em>) na vyhľadávanie skladieb a albumov z
@@ -94,17 +94,17 @@
 
 <div class="overflow-x-hidden border-gray-200 border-b" id="aboutUs">
     <div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
-        <h2 class="font-bold mb-6" id="about">Spoznajte nás:</h2>
-        <div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">
+        <h2 data-aos="fade-down" class="font-bold mb-6" id="about">Spoznajte nás:</h2>
+        <div data-aos="fade-down-right" class="absolute left-0" style="top: 50px; transform: translateX(-100%)">
             <svg width="170px" height="170px">
                 <use xlink:href="#dots-triangle" /></svg>
         </div>
         <div class="flex flex-col sm:flex-row justify-between items-center mb-4">
-            <div>
+            <div data-aos="fade-up">
                 <img src="{{ asset('images/WS-logo-blue-edit.png') }}" alt="logo"
                     class="w-34 h-32 rounded-full mb-8 lg:mb-0" />
             </div>
-            <div class="flex-1 text-lg sm:text-xl ml-6">
+            <div data-aos="zoom-out-down" class="flex-1 text-lg sm:text-xl ml-6">
                 Sme mladá dynamicky sa rozvíjajúca spoločnosť, ktorá svojím zákazníkom ponúka a zhotovuje od menších, až
                 po komplexné
                 webové riešenia. Pri vývoji používame tie najmodernejšie a najspoľahlivejšie technológie a
@@ -119,18 +119,18 @@
     </div> <!-- end get-to-know me -->
 </div>
 
-<div class="overflow-x-hidden" id="contact">
+<div data-aos="fade-up" class="overflow-x-hidden" id="contact">
     <div class="contact-me bg-gray-800 pt-16">
         <div class="container-inner mx-auto text-xl pb-4 relative">
-            <h2 class="font-bold mb-6 header-text">Kontaktujte nás:</h2>
-            <div class="absolute right-0 top-0" style="transform: translate(100%) rotate(180deg)">
+            <h2 data-aos="fade-down" class="font-bold mb-6 header-text">Kontaktujte nás:</h2>
+            <div data-aos="fade-down-left" class="absolute right-0 top-0" style="transform: translate(100%) rotate(180deg)">
                 <svg width="170px" height="170px">
                     <use xlink:href="#dots-triangle" /></svg>
             </div>
-            <p class="mb-12">Ak máte záujem o spoluprácu alebo máte nejákú otázku na nás
+            <p data-aos="zoom-out-down" class="mb-12">Ak máte záujem o spoluprácu alebo máte nejákú otázku na nás
                 môžete nás kontaktovať cez náš kontaktný formulár. Alebo <a href="mailto:info@websystem.sk">poslať
                     email</a></p>
-            <div class="text-lg sm:text-lg mb-16">
+            <div data-aos="zoom-out-down" class="text-lg sm:text-lg mb-16">
                 <div id="contactForm">
                     <contact-form />
                 </div>
@@ -138,20 +138,20 @@
         </div>
     </div> <!-- end contact-me -->
 </div>
-<div class="newsletter bg-gray-700">
+<div data-aos="fade-up" class="newsletter bg-gray-700">
     <div class="container-inner mx-auto py-16 pb-8 text-center textl-xl">
-        <h2 class="text-2xl font-bold mb-8">Odoberajte náš Newsletter</h2>
+        <h2 data-aos="fade-down" class="text-2xl font-bold mb-8">Odoberajte náš Newsletter</h2>
 
         <div class="w-4/5 mx-auto mb-8">
-            <p class="mb-8 text-lg sm:text-xl">Ak sa zaujímate o novinky v spoločnosti WebSystem s.r.o. Tak neváhajte
+            <p data-aos="zoom-out-down" class="mb-8 text-lg sm:text-xl">Ak sa zaujímate o novinky v spoločnosti WebSystem s.r.o. Tak neváhajte
                 a zaregistrujte sa k odberu nášho newsletteru.</p>
-            <div id="newslatter">
+            <div data-aos="zoom-out-down" id="newslatter">
                 <newslatter />
             </div>
         </div>
     </div>
 
-    <div class="container-inner mx-auto -mt-32 pb-4 overflow-x-hidden">
+    <div data-aos="fade-up" class="container-inner mx-auto -mt-32 pb-4 overflow-x-hidden">
         <svg width="725" height="166" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
                 <g opacity=".515">
