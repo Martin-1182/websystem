@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3951cebc4ac3c562c58f802e72e9dc77",
+    "content-hash": "f60312827367dcf430ca9e0f8181a409",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -102,13 +102,64 @@
                 "brick",
                 "math"
             ],
-            "funding": [
+            "time": "2020-08-18T23:57:15+00:00"
+        },
+        {
+            "name": "dipeshsukhia/laravel-html-minify",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dipeshsukhia/laravel-html-minify.git",
+                "reference": "aff3fa3ded71854aad4e06a54fc7f31c9ecb5a25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dipeshsukhia/laravel-html-minify/zipball/aff3fa3ded71854aad4e06a54fc7f31c9ecb5a25",
+                "reference": "aff3fa3ded71854aad4e06a54fc7f31c9ecb5a25",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "^4.8|^5.0|^6.0|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DipeshSukhia\\LaravelHtmlMinify\\LaravelHtmlMinifyServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelHtmlMinify": "DipeshSukhia\\LaravelHtmlMinify\\LaravelHtmlMinifyFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DipeshSukhia\\LaravelHtmlMinify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
                 {
-                    "url": "https://tidelift.com/funding/github/packagist/brick/math",
-                    "type": "tidelift"
+                    "name": "Dipesh Sukhia",
+                    "email": "dipesh.sukhia@gmail.com",
+                    "role": "Developer"
                 }
             ],
-            "time": "2020-08-18T23:57:15+00:00"
+            "description": "laravel minify html output",
+            "homepage": "https://github.com/dipeshsukhia/laravel-html-minify",
+            "keywords": [
+                "dipeshsukhia",
+                "laravel-html-minify"
+            ],
+            "time": "2020-05-27T10:20:42+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1050,32 +1101,6 @@
                 "md",
                 "parser"
             ],
-            "funding": [
-                {
-                    "url": "https://enjoy.gitstore.app/repositories/thephpleague/commonmark",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.colinodell.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.paypal.me/colinpodell/10.00",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/colinodell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/colinodell",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/league/commonmark",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-08-18T01:19:12+00:00"
         },
         {
@@ -1160,12 +1185,6 @@
                 "s3",
                 "sftp",
                 "storage"
-            ],
-            "funding": [
-                {
-                    "url": "https://offset.earth/frankdejonge",
-                    "type": "other"
-                }
             ],
             "time": "2020-08-18T10:57:55+00:00"
         },
@@ -2077,13 +2096,64 @@
                 "identifier",
                 "uuid"
             ],
-            "funding": [
+            "time": "2020-08-18T17:17:46+00:00"
+        },
+        {
+            "name": "renatomarinho/laravel-page-speed",
+            "version": "1.8.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/renatomarinho/laravel-page-speed.git",
+                "reference": "c8a634c94f9b2f2a386377904eba703ad60e2552"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/renatomarinho/laravel-page-speed/zipball/c8a634c94f9b2f2a386377904eba703ad60e2552",
+                "reference": "c8a634c94f9b2f2a386377904eba703ad60e2552",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0 || ^7.0",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "orchestra/testbench": "^3.2",
+                "phpunit/phpunit": "^5.7 || ^6.0 || ^7.0 || ^8.0",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RenatoMarinho\\LaravelPageSpeed\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RenatoMarinho\\LaravelPageSpeed\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
                 {
-                    "url": "https://github.com/ramsey",
-                    "type": "github"
+                    "name": "Renato Marinho",
+                    "email": "renato.marinho@s2move.com"
                 }
             ],
-            "time": "2020-08-18T17:17:46+00:00"
+            "description": "Laravel Page Speed",
+            "keywords": [
+                "html",
+                "laravel",
+                "minify",
+                "optimize",
+                "page speed"
+            ],
+            "time": "2020-05-02T13:12:06+00:00"
         },
         {
             "name": "spatie/laravel-cookie-consent",
@@ -2149,12 +2219,6 @@
                 "eu",
                 "law",
                 "spatie"
-            ],
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                }
             ],
             "time": "2020-06-08T10:07:44+00:00"
         },
@@ -6150,6 +6214,5 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
