@@ -88,7 +88,7 @@
                 />
                 <span class="text-sm">
                     Súhlasím so spracovaním osobných údajov.
-                    <a href="/ochrana-osobnych-udajov">info</a>
+                    <a href="/ochrana-osobnych-udajov">Viac informácií</a>
                 </span>
 
             </label>

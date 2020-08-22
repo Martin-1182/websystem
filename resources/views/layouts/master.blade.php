@@ -59,7 +59,12 @@
 <body class=" bg-gray-900 text-white font-serif">
     <header class="border-t-14 border-green-700">
         <div id="navBar">
-             <nav-bar />
+            @if (\Request::is('cookies', 'ochrana-osobnych-udajov'))
+            <nav-bar-nav />
+            @else
+            <nav-bar />
+            @endif
+
         </div>
     </header>
     <main>
@@ -72,4 +77,5 @@
         @include('cookieConsent::index')
     </footer>
 </body>
+
 </html>

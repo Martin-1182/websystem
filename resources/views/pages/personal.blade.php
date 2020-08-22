@@ -7,8 +7,8 @@
     </div>
     <div class="container-inner mx-auto text-xl pb-4 relative">
         <p class="mb-12 italic antialiased font-light">
-            Spoločnosť Skillrs s.r.o, sídlom: Vajnorská 100/A, 831 04 Bratislava, IČO: 47521295 ako prevádzkovateľ
-            internetového sídla www.learn2code.sk (ďalej len „prevádzkovateľ“) garantuje bezpečnosť a ochranu zverených
+            Spoločnosť WebSystem s.r.o, sídlom: Jesenského 428/18 960 01 Zvolen, IČO: 50491121 ako prevádzkovateľ
+            internetového sídla www.websystem.sk (ďalej len „prevádzkovateľ“) garantuje bezpečnosť a ochranu zverených
             osobných údajov v plnom súlade s nariadením Európskeho parlamentu a Rady č. (EÚ) 2016/679 o ochrane
             fyzických osôb pri spracúvaní osobných údajov a o voľnom pohybe takýchto údajov (ďalej len „GDPR“) a so
             zákonom č. 18/2018 Z.z. o ochrane osobných údajov a o zmene a doplnení niektorých zákonov v znení neskorších
@@ -29,7 +29,7 @@
         </p>
 
         <p class="mb-12">
-            Webstránka www.learn2code.sk používa pri akomkoľvek pripojení užívateľa a prenose akýchkoľvek údajov
+            Webstránka www.websystem.sk používa pri akomkoľvek pripojení užívateľa a prenose akýchkoľvek údajov
             šifrované pripojenie SSL, ktoré znemožňuje prístup tretích osôb k prenášaným údajom počas ich prenosu na
             internete a pozmeňovanie takýchto údajov tretími osobami. Databázy prevádzkovateľa obsahujúce osobné údaje
             sú chránené šifrovaním a neverejnými prístupovými údajmi v súlade s
@@ -37,7 +37,7 @@
         </p>
 
         <p class="mb-12">
-            Užívateľ – dotknutá osoba pri svojej návšteve a ďalšom používaní webových stránok www.learn2code.sk môže
+            Užívateľ – dotknutá osoba pri svojej návšteve a ďalšom používaní webových stránok www.websystem.sk môže
             prevádzkovateľovi poskytnúť svoje osobné údaje. K poskytnutiu osobných údajov užívateľa môže dôjsť pri
             dobrovoľnej registrácii k odberu newsletteru za pomoci takej e-mailovej adresy, z ktorej možno určiť jeho
             totožnosť, alebo pri dobrovoľnom vyplnení kontaktného formulára spojeného s vybraným obsahom webových
@@ -58,10 +58,8 @@
         </p>
 
         <p class="mb-12">
-            Objednávateľ má právo na zmenu alebo odstránenie osobných údajov, po kontaktovaní poskytovateľa.
-
+            Objednávateľ má právo na zmenu alebo odstránenie osobných údajov, <a href="{{ url('/')}}#contact">po kontaktovaní poskytovateľa.</a>
         </p>
-
     </div>
 </div>
 @endsection

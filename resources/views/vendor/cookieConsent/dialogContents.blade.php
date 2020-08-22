@@ -1,4 +1,4 @@
-<div
+<div id="cookies"
     class="z-10 js-cookie-consent cookie-consent transition transform fixed z-100 bottom-0 inset-x-0 pb-2 sm:pb-5 opacity-100 scale-100 translate-y-0 ease-out duration-500">
     <div class="max-w-screen-xl mx-auto px-2 sm:px-4">
         <div class="p-2 rounded-lg bg-green-700 shadow-lg sm:p-3">
@@ -23,8 +23,8 @@
                     </div>
                 </div>
                 <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
-                    <button type="button"
-                        class="-mr-1 flex p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-gray-800"
+                    <button type="button" onclick="hideCookieBar()"
+                        class="-mr-1 flex close p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-gray-800"
                         aria-label="Hide banner">
                         <svg class="h-6 w-6 text-white" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

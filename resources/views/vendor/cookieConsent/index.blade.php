@@ -1,8 +1,12 @@
 @if($cookieConsentConfig['enabled'] && ! $alreadyConsentedWithCookies)
 
-    @include('cookieConsent::dialogContents')
+@include('cookieConsent::dialogContents')
 
-    <script>
+<script>
+    function hideCookieBar() {
+            let closeButton = document.getElementById("cookies");
+            return closeButton.style.display = "none";
+        }
 
         window.laravelCookieConsent = (function () {
 
@@ -25,7 +29,6 @@
                     dialogs[i].style.display = 'none';
                 }
             }
-
             function setCookie(name, value, expirationInDays) {
                 const date = new Date();
                 date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
@@ -51,6 +54,6 @@
                 hideCookieDialog: hideCookieDialog
             };
         })();
-    </script>
+</script>
 
 @endif

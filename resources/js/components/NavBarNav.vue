@@ -29,37 +29,16 @@
 			:class="isOpen ? 'block' : 'hidden'"
 		>
 			<li>
-				<a
-					href="#projects"
-					v-smooth-scroll="{
-						duration: 1000,
-						offset: 10,
-						updateHistory: false
-					}"
-					>Projekty</a
-				>
+				<a href="/">Domov</a>
 			</li>
 			<li>
-				<a
-					href="#aboutUs"
-					v-smooth-scroll="{
-						duration: 1000,
-						offset: -100,
-						updateHistory: false
-					}"
-					>O nás</a
-				>
+				<a href="/#projects">Projekty</a>
 			</li>
 			<li>
-				<a
-					href="#contact"
-					v-smooth-scroll="{
-						duration: 1000,
-						offset: -50,
-						updateHistory: false
-					}"
-					>Kontakt</a
-				>
+				<a href="/#aboutUs">O nás</a>
+			</li>
+			<li>
+				<a href="/#contact">Kontakt</a>
 			</li>
 		</ul>
 	</nav>

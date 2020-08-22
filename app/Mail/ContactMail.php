@@ -33,6 +33,7 @@ class ContactMail extends Mailable
         return $this
             ->subject('Nový email pre websystem s.r.o.')
             ->markdown('emails.contact-form')
+            ->bcc($this->data['email'])
             ->with('data', $this->data);
     }
 }

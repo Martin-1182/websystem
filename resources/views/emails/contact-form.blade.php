@@ -1,12 +1,10 @@
 @component('mail::message')
-# Nová správa od ### {{ $data['name'] }}
+# Nová správa od  {{ $data['name'] }}
 
 {{ $data['message'] }}
-
-@component('mail::button', ['url' => ''])
-Button Text
-@endcomponent
-
-Thanks,<br>
+<br><hr>
+ Email: <a href="mailto:{{ $data['email'] }}">{{ $data['email'] }}</a>
+#
+Ďakujeme,<br>
 {{ config('app.name') }}
 @endcomponent
